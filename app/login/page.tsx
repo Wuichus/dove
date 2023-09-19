@@ -2,7 +2,6 @@
 import Button from "@/components/ui/Button";
 import useGlobalStore from "@/lib/store";
 import Image from "next/image";
-import { FormEventHandler } from "react";
 import { useRouter } from "next/navigation";
 import { login } from "@/lib/auth";
 

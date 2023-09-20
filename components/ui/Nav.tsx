@@ -17,7 +17,10 @@ const Nav = () => {
   return (
     <nav className='border-mainborder-light bg-base-light  dark:bg-base-dark'>
       <div className='mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4'>
-        <Link href='/' className='flex items-center'>
+        <Link
+          href='/'
+          className='flex items-center'
+        >
           <Image
             src='/dove.png'
             className='invert'
@@ -51,7 +54,10 @@ const Nav = () => {
             />
           </svg>
         </button>
-        <div className='hidden w-full md:block md:w-auto' id='navbar-default'>
+        <div
+          className='hidden w-full md:block md:w-auto'
+          id='navbar-default'
+        >
           <ul className='dark:border-secondary mt-4 flex flex-col rounded-lg border border-white-light bg-white-light p-4 font-medium dark:bg-secondary-light md:mt-0 md:flex-row md:space-x-8 md:border-0 md:bg-white-light md:p-0 md:dark:bg-base-dark'>
             {navItems.map((item, idx) => (
               <li key={`nav_link_${idx}`}>

@@ -15,7 +15,7 @@ const Nav = () => {
   const user = useGlobalStore((store) => store.user);
 
   return (
-    <nav className="bg-white border-gray-200 dark:bg-gray-900">
+    <nav className="bg-base-light border-mainborder-light  dark:bg-base-dark">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <Link href="/" className="flex items-center">
           <Image
@@ -30,7 +30,7 @@ const Nav = () => {
         <button
           data-collapse-toggle="navbar-default"
           type="button"
-          className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white-light rounded-lg md:hidden hover:bg-white-light focus:outline-none focus:ring-2 focus:ring-mainborder-light  dark:text-white-dark dark:hover:bg-secondary-dark dark:focus:ring-mainborder-dark"
           aria-controls="navbar-default"
           aria-expanded="false"
         >
@@ -52,12 +52,12 @@ const Nav = () => {
           </svg>
         </button>
         <div className="hidden w-full md:block md:w-auto" id="navbar-default">
-          <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-white-light rounded-lg bg-white-light md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white-light dark:bg-secondary-light md:dark:bg-base-dark dark:border-secondary">
             {navItems.map((item, idx) => (
               <li key={`nav_link_${idx}`}>
                 <Link
                   href={item.href}
-                  className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  className="block py-2 pl-3 pr-4 text-base-dark rounded hover:bg-white-light md:hover:bg-transparent md:border-0 md:hover:text-secondary-light md:p-0 dark:text-white-light md:dark:hover:text-secondary-dark dark:hover:bg-secondary-light dark:hover:text-white-light md:dark:hover:bg-transparent"
                 >
                   {item.name}
                 </Link>
@@ -67,7 +67,7 @@ const Nav = () => {
               <li>
                 <span
                   onClick={logout}
-                  className="block py-2 pl-3 pr-4 cursor-pointer text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  className="block py-2 pl-3 pr-4 cursor-pointer text-base-dark rounded hover:bg-white-light md:hover:bg-transparent md:border-0 md:hover:text-secondary-light md:p-0 dark:text-white-light md:dark:hover:text-secondary-dark dark:hover:bg-secondary-light dark:hover:text-white-light md:dark:hover:bg-transparent"
                 >
                   Logout
                 </span>

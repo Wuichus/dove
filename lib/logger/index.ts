@@ -1,4 +1,4 @@
 // This will eventually be an actual logger...
-const logger = console;
+const logger = console
 
-export default logger;
+export default logger

@@ -7,6 +7,7 @@ initializeAuth()
 
 export default function Home() {
   const loading = useAuthGuard()
+
   if (loading) return <p>Loading...</p>
 
   return (
